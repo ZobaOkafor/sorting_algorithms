@@ -33,6 +33,9 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 int lomuto_partition(int *array, int low, int high, size_t size);
 void quick_sort_recursive(int *array, int low, int high, size_t size);
+void swap(listint_t **ptr1, listint_t **ptr2, int n);
+void liststart_sort(listint_t **ptr, listint_t **start, listint_t **list);
+void listend_sort(listint_t **ptr, listint_t **end, listint_t **list);
 
 
 
