@@ -11,27 +11,25 @@
 
 void selection_sort(int *array, size_t size)
 {
-	size_t i, j, min_index;
-	int tmp;
+	size_t i, j, cur_min;
 
 	if (array == NULL || size <= 1)
 		return;
-
 	for (i = 0; i < size - 1; i++)
 	{
-		min_index = i;
+		cur_min = i;
 
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[j] < array[min_index])
-				min_index = j;
+			if (array[j] < array[cur_min])
+				cur_min = j;
 		}
 
-		if (min_index != i)
+		if (cur_min != i)
 		{
-			tmp = array[i];
-			array[i] = array[min_index];
-			array[min_index] = tmp;
+			array[i] = array[i] ^ array[cur_min];
+			array[cur_min] = array[i] ^ array[cur_min];
+			array[i] = array[i] ^ array[cur_min];
 
 			print_array(array, size);
 		}
