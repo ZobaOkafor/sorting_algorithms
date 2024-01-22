@@ -76,17 +76,3 @@ void swap(listint_t **ptr1, listint_t **ptr2, int n)
 	else
 		*ptr2 = aux;
 }
-
-
-/**
- * swap_integers - Swap two integers in an array.
- * @a: The first integer to swap.
- * @b: The second integer to swap.
- */
-void swap_integers(int *a, int *b)
-{
-	int tmp = *a;
-
-	*a = *b;
-	*b = tmp;
-}
