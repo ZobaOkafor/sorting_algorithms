@@ -36,7 +36,7 @@ void quick_sort_recursive(int *array, int low, int high, size_t size);
 void swap(listint_t **ptr1, listint_t **ptr2, int n);
 void liststart_sort(listint_t **ptr, listint_t **start, listint_t **list);
 void listend_sort(listint_t **ptr, listint_t **end, listint_t **list);
-void merge_sub_array(int *sub_array int *buff, size_t front, size_t mid, size_t back);
+void merge_sub_array(int *sub_array, int *buff, size_t front, size_t middle, size_t back);
 void merge_sort_recursive(int *sub_array, int *buff, size_t front, size_t back);
 
 
