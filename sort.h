@@ -41,6 +41,8 @@ void merge_sort_recursive(int *sub_array, int *buff, size_t front, size_t back);
 void swap_integers(int *a, int *b);
 void bitonic_merge(int *array, size_t start, size_t seq, char dir);
 void bitonic_seq(int *array, size_t start, size_t seq, char dir);
+int partition_hoare(int *array, size_t size, int high, int low);
+void sort_hoare(int *array, size_t size, int high, int low);
 
 
 
