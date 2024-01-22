@@ -44,8 +44,8 @@ void sift_down(int *array, size_t size, size_t start, size_t end);
 int partition_hoare(int *array, size_t size, int high, int low);
 int lomuto_partition(int *array, int low, int high, size_t size);
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char dir);
-void merge_bitonic(int *array, size_t size, size_t start,
-		size_t seq, char dir);
+void merge_bitonic(int *array, size_t size, size_t start, size_t seq,
+		char dir);
 void quick_sort_recursive(int *array, int low, int high, size_t size);
 void listend_sort(listint_t **ptr, listint_t **end, listint_t **list);
 void liststart_sort(listint_t **ptr, listint_t **start, listint_t **list);
