@@ -2,7 +2,7 @@
 
 
 /**
- * swap_list - swaps the elements of the list
+ * swap - swaps the elements of the list
  * @ptr1: first pointer
  * @ptr2: second pointer
  * @n: n is 0 for increase, n is 1 for decrease
