@@ -38,6 +38,9 @@ void liststart_sort(listint_t **ptr, listint_t **start, listint_t **list);
 void listend_sort(listint_t **ptr, listint_t **end, listint_t **list);
 void merge_sub_array(int *sub_array, int *buff, size_t front, size_t middle, size_t back);
 void merge_sort_recursive(int *sub_array, int *buff, size_t front, size_t back);
+void swap_integers(int *a, int *b);
+void bitonic_merge(int *array, size_t start, size_t seq, char dir);
+void bitonic_seq(int *array, size_t start, size_t seq, char dir);
 
 
 
