@@ -21,28 +21,37 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 
 
-/* Helper function prototypes for printing */
-void print_array(const int *array, size_t size);
-void print_list(const listint_t *list);
-int lomuto_partition(int *array, int low, int high, size_t size);
-void quick_sort_recursive(int *array, int low, int high, size_t size);
-void swap(listint_t **ptr1, listint_t **ptr2, int n);
-void liststart_sort(listint_t **ptr, listint_t **start, listint_t **list);
-void listend_sort(listint_t **ptr, listint_t **end, listint_t **list);
-void merge_sub_array(int *sub_array, int *buff, size_t front, size_t middle, size_t back);
-void merge_sort_recursive(int *sub_array, int *buff, size_t front, size_t back);
+/* Utility function prototypes */
 void swap_integers(int *a, int *b);
-void bitonic_merge(int *array, size_t start, size_t seq, char dir);
-void bitonic_seq(int *array, size_t start, size_t seq, char dir);
-int partition_hoare(int *array, size_t size, int high, int low);
+void print_list(const listint_t *list);
+void print_array(const int *array, size_t size);
+void swap(listint_t **ptr1, listint_t **ptr2, int n);
+
+
+
+/* Helper function prototypes for */
+int getMax(int *array, size_t size);
+void count_sort(int *array, size_t size, int exp);
 void sort_hoare(int *array, size_t size, int high, int low);
+void sift_down(int *array, size_t size, size_t start, size_t end);
+int partition_hoare(int *array, size_t size, int high, int low);
+int lomuto_partition(int *array, int low, int high, size_t size);
+void bitonic_seq(int *array, size_t start, size_t seq, char dir);
+void merge_bitonic(int *array, size_t start, size_t seq, char dir);
+void quick_sort_recursive(int *array, int low, int high, size_t size);
+void listend_sort(listint_t **ptr, listint_t **end, listint_t **list);
+void liststart_sort(listint_t **ptr, listint_t **start, listint_t **list);
+void merge_sort_recursive(int *sub_array, int *buff, size_t front,
+		size_t back);
+void merge_sub_array(int *sub_array, int *buff, size_t front,
+		size_t middle, size_t back);
 
 
 
