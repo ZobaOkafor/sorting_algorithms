@@ -2,6 +2,9 @@
 #define DECK_H
 
 
+#include <stdlib.h>
+
+
 /**
  * enum kind_e - Enumeration of card suits.
  * @SPADE: Spades suit.
