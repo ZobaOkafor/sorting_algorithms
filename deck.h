@@ -51,7 +51,7 @@ typedef struct deck_node_s
 
 void sort_deck(deck_node_t **deck);
 int _strcmp(const char *s1, const char *s2);
-static int compare_cards(const void *a, const void *b);
+int compare_cards(const void *a, const void *b);
 
 
 #endif

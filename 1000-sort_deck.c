@@ -34,7 +34,7 @@ int _strcmp(const char *s1, const char *s2)
  * respectively, to be less than, to match, or be greater than b.
  */
 
-static int compare_cards(const void *a, const void *b)
+int compare_cards(const void *a, const void *b)
 {
 	const card_t *card_a = (*(const deck_node_t **)a)->card;
 	const card_t *card_b = (*(const deck_node_t **)b)->card;
